@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>userCenterFunctionBQMall</key>
+	<dict>
+		<key>section1</key>
+		<array>
+			<string>个人资料|personal_data_icon|UserInfoViewController:userCenter_userInformation</string>
+			<string>我的收藏|mark_icon|MyCollectViewController:userCenter_myCollection</string>
+			<string>我的优惠券|coupon_number|MyCouponViewController:userCenter_myTicket</string>
+			<string>我的收货地址|myaddress_icon|MyAddressListController:userCenter_myAddress</string>
+		</array>
+		<key>section2</key>
+		<array>
+			<string>我的商城订单|mall_orders_icon|MyMallOrderListController:userCenter_myMallOrder</string>
+			<string>我购买的商城商品|purchased_icon|BuyedProductViewController:userCenter_myMallProduct</string>
+		</array>
+		<key>section3</key>
+		<array>
+			<string>我的服务券订单|service_orders_icon|MyOrderViewController:userCenter_mySrvOrder</string>
+			<string>我购买的服务券|purchased_service_icon|MyServiceCouponViewController:userCenter_mySrv</string>
+		</array>
+	</dict>
+	<key>userCenterFunctionBQLIFE</key>
+	<dict>
+		<key>section1</key>
+		<array>
+			<string>个人资料|personal_data_icon|UserInfoViewController:userCenter_userInformation</string>
+			<string>我的收藏|mark_icon|MyCollectViewController:userCenter_myCollection</string>
+			<string>我的优惠券|coupon_number|MyCouponViewController:userCenter_myTicket</string>
+		</array>
+		<key>section2</key>
+		<array>
+			<string>我的服务券订单|service_orders_icon|MyOrderViewController:userCenter_mySrvOrder</string>
+			<string>我购买的服务券|purchased_service_icon|MyServiceCouponViewController:userCenter_mySrv</string>
+		</array>
+	</dict>
+	<key>morePage</key>
+	<dict>
+		<key>section1</key>
+		<array>
+			<string>icon|仅wifi下显示图片</string>
+			<string>版本更新</string>
+			<string>喜欢我们，打分鼓励</string>
+			<string>分享给好友</string>
+			<string>客服热线：</string>
+		</array>
+	</dict>
+	<key>indexServiceCategory</key>
+	<dict>
+		<key>狗狗生活服务</key>
+		<array>
+			<string>洗护|cate_6|9000|lifeIndex_dogSrv_xihu</string>
+			<string>造型|cate_4|9001|lifeIndex_dogSrv_zaoxing</string>
+			<string>寄养|cate_1|9002|lifeIndex_dogSrv_jiyang</string>
+			<string>绝育|cate_2|9004|lifeIndex_dogSrv_jueyu</string>
+			<string>更多|title_dog|900|lifeIndex_dogSrv_more</string>
+		</array>
+		<key>猫猫生活服务</key>
+		<array>
+			<string>洗护|cate_5|9007|lifeIndex_catSrv_xihu</string>
+			<string>医疗|cate_3|9011|lifeIndex_catSrv_yiliao</string>
+			<string>寄养|cate_1|9008|lifeIndex_catSrv_jiyang</string>
+			<string>绝育|cate_2|9010|lifeIndex_catSrv_jueyu</string>
+			<string>更多|title_cat|800|lifeIndex_catSrv_more</string>
+		</array>
+	</dict>
+	<key>ShoppingCartJsonString</key>
+	<string>{
+    &quot;ResponseStatus&quot;: 0,
+    &quot;ResponseMsg&quot;: &quot;null&quot;,
+    &quot;ResponseData&quot;: {
+        &quot;TipFront&quot;: &quot;江浙沪满&quot;,
+        &quot;TipMiddle&quot;: &quot;免运费，还差&quot;,
+        &quot;TipMoneyFront&quot;: &quot;60&quot;,
+        &quot;TipMoneyBack&quot;: &quot;10&quot;,
+        &quot;NeedToPay&quot;: 111.03,
+        &quot;Preferential&quot;: 12.32,
+        &quot;GroupList&quot;: [
+            {
+                &quot;GoodsList&quot;: [
+                    {
+                        &quot;GoodsId&quot;: 1,
+                        &quot;GoodsImg&quot;: &quot;http://img.boqiicdn.com/Data/Shop/0/74/7429/picpath11366860714_thumb.jpg&quot;,
+                        &quot;GoodsTitle&quot;: &quot;雷米高（Ramical）宠物医疗 广谱驱虫药驱虫一粒清6片装&quot;,
+                        &quot;GoodsPrice&quot;: 120.23,
+                        &quot;GoodsNum&quot;: 11,
+                        &quot;GoodsLimit&quot;: 5,
+                        &quot;GoodsSpec&quot;: [
+                            {
+                                &quot;Key&quot;: &quot;颜色&quot;,
+                                &quot;Value&quot;: &quot;天蓝色&quot;
+                            }
+                        ],
+                        &quot;GoodsType&quot;: null,
+                        &quot;GoodsSpecId&quot;: &quot;1,2&quot;,
+                        &quot;IsSelected&quot;: 1,
+                        &quot;PreferentialInfo&quot;: [
+                            {
+                                &quot;ActionId&quot;: 7,
+                                &quot;ActionTitle&quot;: &quot;多买优惠，买5件减10元&quot;
+                            },
+                            {
+                                &quot;ActionId&quot;: 5,
+                                &quot;ActionTitle&quot;: &quot;雪庄园生活馆 10kg以内狗狗洗澡套餐 *1&quot;
+                            }
+                        ],
+                        &quot;ChangeBuyId&quot;: 0,
+                        &quot;ActionId&quot;: 0,
+                        &quot;IsChangeBuy&quot;: 1,
+                        &quot;IsPreferential&quot;: 0,
+                        &quot;ActionResult&quot;: &quot;单品参加多买优惠，满两件送一罐头，上不封顶&quot;
+                    }
+                ],
+                &quot;PreferentialInfo&quot;: [
+                    {
+                        &quot;ActionId&quot;: 2,
+                        &quot;ActionTitle&quot;: &quot;下单返积分，可获赠5个积分&quot;
+                    }
+                ],
+                &quot;ActionResult&quot;: &quot;已满100元，优惠10元&quot;
+            },
+            {
+                &quot;GoodsList&quot;: [
+                    {
+                        &quot;GoodsId&quot;: 1,
+                        &quot;GoodsImg&quot;: &quot;http://img.boqiicdn.com/Data/Shop/0/68/6839/picpath11373869648_thumb.jpg&quot;,
+                        &quot;GoodsTitle&quot;: &quot;魔金宠物洁耳液50G配方温和耳部护理/洗耳水&quot;,
+                        &quot;GoodsPrice&quot;: 1210.23,
+                        &quot;GoodsNum&quot;: 121,
+                        &quot;GoodsLimit&quot;: 5,
+                        &quot;GoodsSpec&quot;: [
+                            {
+                                &quot;Key&quot;: &quot;颜色&quot;,
+                                &quot;Value&quot;: &quot;红色&quot;
+                            },
+                            {
+                                &quot;Key&quot;: &quot;尺寸&quot;,
+                                &quot;Value&quot;: &quot;XXL&quot;
+                            }
+                        ],
+                        &quot;GoodsType&quot;: null,
+                        &quot;GoodsSpecId&quot;: &quot;1，2&quot;,
+                        &quot;IsSelected&quot;: 1,
+                        &quot;PreferentialInfo&quot;: [],
+                        &quot;ChangeBuyId&quot;: 0,
+                        &quot;ActionId&quot;: 0,
+                        &quot;IsChangeBuy&quot;: 1,
+                        &quot;IsPreferential&quot;: 1,
+                        &quot;ActionResult&quot;: &quot;活动结果&quot;
+                    },
+                    {
+                        &quot;GoodsId&quot;: 1,
+                        &quot;GoodsImg&quot;: &quot;http: //img.boqiicdn.com/Data/Shop/0/69/6981/picpath11366098656_thumb.jpg&quot;,
+                        &quot;GoodsTitle&quot;: &quot;高档不锈钢烤漆双联狗碗双联碗宠物水盆狗盆食盆&quot;,
+                        &quot;GoodsPrice&quot;: 12130.23,
+                        &quot;GoodsNum&quot;: 121,
+                        &quot;GoodsLimit&quot;: 5,
+                        &quot;GoodsSpec&quot;: [
+                            {
+                                &quot;Key&quot;: &quot;颜色&quot;,
+                                &quot;Value&quot;: &quot;波奇橙&quot;
+                            },
+                            {
+                                &quot;Key&quot;: &quot;尺寸&quot;,
+                                &quot;Value&quot;: &quot;大21&quot;
+                            }
+                        ],
+                        &quot;GoodsType&quot;: null,
+                        &quot;GoodsSpecId&quot;: &quot;1，2&quot;,
+                        &quot;IsSelected&quot;: 1,
+                        &quot;PreferentialInfo&quot;: [
+                            {
+                                &quot;ActionId&quot;: 3,
+                                &quot;ActionTitle&quot;: &quot;折扣到底，双十一只要1230元&quot;
+                            },
+                            {
+                                &quot;ActionId&quot;: 4,
+                                &quot;ActionTitle&quot;: &quot;多买132优惠，买5件减10元&quot;
+                            }
+                        ],
+                        &quot;ChangeBuyId&quot;: 0,
+                        &quot;ActionId&quot;: 0,
+                        &quot;IsChangeBuy&quot;: 0,
+                        &quot;IsPreferential&quot;: 0,
+                        &quot;ActionResult&quot;: &quot;&quot;
+                    }
+                ],
+                &quot;PreferentialInfo&quot;: [ ],
+                &quot;ActionResult&quot;: &quot;多买132优惠，买5件减10元&quot;
+            }
+        ]
+    }
+}</string>
+</dict>
+</plist>

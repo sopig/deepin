@@ -1,0 +1,46 @@
+10
+
+dir
+2614
+svn://tolly@172.16.76.251/svnmobile/Code/%E6%B3%A2%E5%A5%87%E5%AE%A0%E7%89%A9/iOS/BoqiiMall/ExternalServices/shareSDK
+svn://tolly@172.16.76.251/svnmobile
+
+
+
+2014-07-14T04:42:04.623067Z
+1263
+yangsw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1a0dd885-fd28-4d25-a165-77d4bc748f21
+
+Connection
+dir
+
+ShareSDK.framework
+dir
+
+Parse.framework
+dir
+
+Extend
+dir
+
+Core
+dir
+
+UI
+dir
+

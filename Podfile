@@ -1,0 +1,8 @@
+platform :ios, '6.0'
+pod 'pop', '~> 1.0'
+pod 'SDWebImage', '~> 3.7.1'
+pod 'UIActivityIndicator-for-SDWebImage'
+pod 'MBProgressHUD'
+pod 'OpenUDID'
+pod 'AFNetworking', '~> 2.3.1'
+pod 'NZAlertView', '~> 0.0.11'

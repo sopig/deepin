@@ -1,0 +1,1 @@
+link ../../SDWebImage/SDWebImage/UIImage+GIF.h

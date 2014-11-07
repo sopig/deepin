@@ -1,0 +1,268 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#endif
+#import "PMGlobal.h"
+#import "BQ_global.h"
+#import "UICommon.h"
+#import "MBProgressHUD.h"
+#import "BqiAPI.h"
+#import "InterfaceAPIExcute.h"
+#import "UIColor+ColorUtility.h"
+#import "NSString+StringUtility.h"
+#import "UserUnit.h"
+#import "RTLabel.h"
+#import "MobClick.h"
+#import "UIImageView+WebCache.h"
+//#import <UIImageView+AFNetworking.h>
+//#import <AMSmoothAlertView.h>
+#import <NZAlertView.h>
+#import "APIMethodHandle.h"
+#import "WXApi.h"
+#import "WXHandle.h"
+//#import "BQUtil.h"
+
+//  --  ...
+#define BQShareContent @"我正在使用波奇宠物手机客户端，这里有正品特价高质服务，随时随地就能秒杀、抽奖，推荐你也试试"
+
+//  --  ios 版本
+#define IOS_VERSION     [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IOS7_OR_LATER   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f) // -- ios7 版本
+#define Iphone5_OrLater [UIScreen mainScreen].bounds.size.height == 568
+#define IOS8_OR_LATER   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0f) // -- iOS 8 版本
+//  --  app 版本类型 : 1表示波奇商城  0表示生活馆
+#define APPVERSIONTYPE  1
+
+
+//  --  app 环境配置
+#define envService   -100         //  --  大于0为 prd环境 ; 小于等于0为 beta环境
+#if envService > 0
+    #define kHostUrl_boqiiMall        @"shopapi.boqii.com"        // -- app运行环境（商城）
+    #define kHostUrl_boqiiLife        @"vet.boqii.com"            // -- app运行环境（生活馆）
+    #define uppayEnv        @"00"                                 // -- 银联支付环境     : 【 01测试 00生产 】
+    #define loginByAlipay   @"http://shop.boqii.com/passport.php?System=App"            //  -- 支付宝登录URL
+    #define loginOkAlipay   @"http://shop.boqii.com/include/alipay"                     //  -- 支付宝登录成功最后返回页面
+#else
+    #define kHostUrl_boqiiMall        @"v1.test.shopapitest.boqii.com"    // -- app运行环境（商城）
+    //#define kHostUrl_boqiiLife        @"vettest.boqii.com"        // -- app运行环境（生活馆）
+    #define kHostUrl_boqiiLife        @"v2.vettest.boqii.com"        // -- app运行环境（生活馆）
+    #define uppayEnv        @"01"                                 // -- 银联支付环境     : 【 01测试 00生产 】
+    #define loginByAlipay   @"http://shoptest.boqii.com/passport.php?System=App"        //  -- 支付宝登录URL
+    #define loginOkAlipay   @"http://shoptest.boqii.com/include/alipay"                 //  -- 支付宝登录成功最后返回页面
+#endif
+
+
+//  --  提示时间
+#define kShowMsgAfterDelay    2
+//  --  网络引擎
+#define NETWORK_ENGINE_mall  @"networkengine_boqiimall"
+#define NETWORK_ENGINE_life  @"networkengine_boqiilife"
+//  --  仅仅wifi下显示图片
+#define SHOWIMG_WIFI    @"wifishowimg"
+//  --  图片尺寸   :    要换retain双倍切，不然模糊
+#define kImageUrlType_75x75       @"150x150"  //  -- 适用 商品列表图
+#define kImageUrlType_100x70      @"200x140"  //  -- 适用 生活馆列表图
+#define kImageUrlType_320x126     @"640x252"  //  -- 大图banner 252/2
+#define kImageUrlType_320x210     @"640x420"  //  -- 商品页大图
+
+//navigationBar大小
+#define NavBarFrame self.navigationController.navigationBar.frame
+//设备屏幕大小
+#define __MainScreenFrame   [[UIScreen mainScreen] bounds]
+//设备屏幕宽
+#define __MainScreen_Width  __MainScreenFrame.size.width
+//设备屏幕高 20,表示状态栏高度.如3.5inch 的高,得到的__MainScreenFrame.size.height是480,而去掉电量那条状态栏,我们真正用到的是460;
+#define __MainScreen_Height (__MainScreenFrame.size.height - 20)
+//视图内容高度1 ＝ 设备高度(不含状态栏高度) - Navigation高度 － TabBar高度
+#define __ContentHeight_noNavTab  (__MainScreen_Height - 44 - 50)
+//视图内容高度2 ＝ 设备高度(不含状态栏高度) - Navigation高度
+#define __ContentHeight_noTab   (__MainScreen_Height - 44)
+//  自定义区域宽度 =  设备宽度 - (指定宽*2)
+#define def_WidthArea(Num)    (__MainScreen_Width-(Num*2))
+
+#define kMainScreenHeight (IOS7_OR_LATER?__MainScreenFrame.size.height:(__MainScreenFrame.size.height - 20))
+
+
+/*******************************************************
+ *                  常 用 宏 定 义  :   请都以 "def_" 格式
+ ******************************************************/
+//  --  stretchable img
+#define def_ImgStretchable(imgname,left,top) [[UIImage imageNamed:imgname]stretchableImageWithLeftCapWidth:left topCapHeight:top]
+
+//  --  根据当前view 找所在tableview 里的 indexpath
+#define INDEXPATH_SUBVIEW_TABLEVIEW(subview,tableview)\
+({\
+    CGRect subviewFrame = [subview convertRect:subview.bounds toView:tableview];\
+    NSIndexPath *tabIndexPath = [tableview indexPathForRowAtPoint:subviewFrame.origin];\
+    tabIndexPath;\
+})\
+
+//  --  根据当前view 找所在tableview 里的 tableviewcell
+#define CELL_SUBVIEW_TABLEVIEW(subview,tableview)\
+({\
+    CGRect subviewFrame = [subview convertRect:subview.bounds toView:tableview];\
+    NSIndexPath *indexPath = [tableview indexPathForRowAtPoint:subviewFrame.origin];\
+    UITableViewCell *tabCell  = [tableview cellForRowAtIndexPath:indexPath];\
+    tabCell;\
+})\
+
+
+
+/*******************************************************
+ *                 常 用 style 定 义  :  color  & font
+ ******************************************************/
+
+//  --  color : app color统一
+#define color_body          [UIColor convertHexToRGB:@"f0f0f0"] // 灰色 - 统一灰色背景 : 浅点
+#define color_bodyededed    [UIColor convertHexToRGB:@"ededed"] // 灰色 - 页面灰色背景 : 稍深点
+
+#define color_717171    [UIColor convertHexToRGB:@"717171"] // 灰色 - 中深度 浅灰色
+#define color_b3b3b3    [UIColor convertHexToRGB:@"b3b3b3"] // 灰色 - 浅灰色
+#define color_dedede    [UIColor convertHexToRGB:@"dedede"] // 灰色 - 浅灰   [如搜索框]
+#define color_d1d1d1    [UIColor convertHexToRGB:@"d8d8d8"] // 灰色 - 浅灰色 d1d1d1
+#define color_ededed    [UIColor convertHexToRGB:@"ededed"] // 灰色 - 很浅灰 [一般用于分隔线]
+
+#define color_333333    [UIColor convertHexToRGB:@"333333"] // 黑色 - 中黑色标题字
+#define color_4e4e4e    [UIColor convertHexToRGB:@"4e4e4e"] // 黑色 - 黑色 标题字
+#define color_575757    [UIColor convertHexToRGB:@"575757"] // 黑色 - 浅黑
+#define color_989898    [UIColor convertHexToRGB:@"989898"] // 灰色 - 例如三级分类标题字
+
+#define color_fc4a00    [UIColor convertHexToRGB:@"fc4a00"] // 橙色 - 波奇橙色字  用与价格
+#define color_fbf7f7    [UIColor convertHexToRGB:@"fbf6f1"] // 橙色 - 一般虚线框背景色
+
+#define color_ff2a00    [UIColor convertHexToRGB:@"ff2a00"] // 红色 - 
+#define color_8fc31f    [UIColor convertHexToRGB:@"8fc31f"] // 绿色 -
+#define color_26A9E1    [UIColor convertHexToRGB:@"26A9E1"] // 蓝色 -
+
+//  --  font
+#define  defFont12  [UIFont systemFontOfSize:12]
+#define  defFont13  [UIFont systemFontOfSize:13]
+#define  defFont14  [UIFont systemFontOfSize:14]
+#define  defFont15  [UIFont systemFontOfSize:15]
+#define  defFont16  [UIFont systemFontOfSize:16]
+#define  defFont17  [UIFont systemFontOfSize:17]
+#define  defFont18  [UIFont systemFontOfSize:18]
+#define  defFont(isBold,size) isBold ? [UIFont boldSystemFontOfSize:size] : [UIFont systemFontOfSize:size]
+
+
+
+
+
+/*******************************************************
+ *                 使 用 高 德  :   请都以 "def_" 格式
+ ******************************************************/
+#ifndef SearchV3Demo_APIKey_h
+#define SearchV3Demo_APIKey_h
+
+//  --使用高德SearchV3, 请首先注册APIKey, 注册APIKey请参考 http://api.amap.com
+//2.2: @"90f4e033cdcc0979042baee4d6ec757e"  2.3: @"64efb19aa8f077cb5c9255c87f0625fe";
+const static NSString *APIKeyFor_aMap = @"64efb19aa8f077cb5c9255c87f0625fe";
+#endif
+
+/*******************************************************
+ *                 支 付 宝 urlscheme :   回调
+ ******************************************************/
+#define Alipay_UrlSchemes (APPVERSIONTYPE ? @"boqiialipay":@"boqiialipayO2O")
+
+
+/*******************************************************
+ *                 使 用 shareSDK :   分享
+ ******************************************************/
+#define ShareSDK_APPKEY (APPVERSIONTYPE ? @"1e4a9fba065a":@"293ee78a7604")
+
+
+/*******************************************************
+ *                 使 用 友 盟 :   友盟统计
+ ******************************************************/
+#define UMENG_APPKEY (APPVERSIONTYPE ? @"5375b5ca56240b3f67015a9e":@"53e050b7fd98c5bdb30275dd")
+
+
+/*******************************************************
+ *                 第 三 方 登 录 :   parse
+ ******************************************************/
+#define  parseAPPID     @"2TbMhjs022RFJmAIkPvWXHQb9aGylQxTiAdH2R8K"
+#define  parseClientKey @"vXC4LWHieolbqnasT3uN6xsQfdlpIZ1zWrKFmEKc"
+
+/*******************************************************
+ *                 Q Q  & WeChat:
+ ******************************************************/
+#define tencentAppid        (APPVERSIONTYPE ? @"1101479516":@"1101965298")   
+#define tencentAPPKEY       (APPVERSIONTYPE ? @"01HPeLc2FrGeeSdMrV":@"SI8L4MVLVaCxAcXx")
+#define tencentRedirectUrl  (APPVERSIONTYPE ? @"http://www.boqii.com":@"http://m.boqii.com/appdown-petlife.html")
+//#define tencentAppid        @"219678"
+//#define tencentAPPKEY       @"45af5928e26d0c3fad5bcda4461ac902"
+
+#define tencentWXAppID      (APPVERSIONTYPE ? @"wx6ce20275fb3ca36b":@"wxc6e993788564e199")
+#define tencentWXAppSecret  (APPVERSIONTYPE ? @"07a1e931f0f28a65d0b55e20e095241b":@"175b5e95aa09065e7627b8c0ad12a605")
+
+#define tencentWXPaySignKey (APPVERSIONTYPE ? @"F0cnttdvyarN2qUR7XqgHNCDndOADZsIbzpO6h8s3Sp21CDx6VRiPyuCPDE0warBo7t8y8kGdtEozXn5CybAkBHmdv9oUj0UeTzgAAXgDc17JHIdscSWdRYbkJSI32AA":@"")
+
+#define tencentWXPartnerID (APPVERSIONTYPE ? @"1219676801":@"")
+#define tencentWXPartnerKey (APPVERSIONTYPE ? @"eca1cfbfefccafcb947ef552708b735e":@"")
+
+/*******************************************************
+ *                 新 浪  :
+ ******************************************************/
+#define sinaAppKey             (APPVERSIONTYPE ? @"3838805037":@"1531042382")
+#define sinaAppSecret          (APPVERSIONTYPE ? @"823957130819946d07452641a7ed9115":@"cab68e41627d315111192f8105b4a1da")
+#define sinaRedirectUrl        (APPVERSIONTYPE ? @"http://www.boqii.com" :@"http://m.boqii.com/appdown-petlife.html")
+//#define sinaAppKey              @"4030222662"
+//#define sinaAppSecret           @"255ad0fbfe4f68e8cc47e1fcf07c5c96"
+//#define sinaRedirectUrl         @"http://shop.boqii.com/api/weibo/callback.php"
+
+
+
+/*******************************************************
+ *                 固 定 数 据 区  :   请都以 "你的类型_" 格式
+ ******************************************************/
+
+//  --  所有支付方式  :   生活馆暂不使作微信支付
+#define payTypeString   (APPVERSIONTYPE ? @"1,支付宝客户端支付,推荐已安装支付宝客户端的用户使用,logo_alipay_app|4,微信支付,推荐微信账户的用户使用,wechat":@"1,支付宝客户端支付,推荐已安装支付宝客户端的用户使用,logo_alipay_app")//|2,支付宝网页支付,推荐有支付宝账户的用户使用,logo_alipay_wab
+
+//  --  上面的通用赛选区.
+#define filterKey_all       @"全部分类"
+#define filterKey_near      @"离我最近"
+#define filterValue_near    @"离我最近:1|价格最低:2|价格最高:3|销量最好:4"
+
+#define filterKey_areaservice       @"服务区域"
+#define filterKey_area              @"区域"
+#define filterKey_MerchantCategory  @"分类"
+
+#define filterKey_merchantOrderType      @"默认排序"
+#define filterValue_merchantOrderType    @"默认排序:1|离我最近:2|认证商户:3|平均消费由高到低:4|平均消费由低到高:5|人气由高到低:6|明星商户:7"
+
+
+
+/*******************************************************
+ *                 数 据 缓 存 key  :  请都以 "MemoryData_" 格式
+ ******************************************************/
+#define MemoryFileName              @"jsonFormResponse.plist"
+#define MemoryData_PCA              @"PCAData"
+
+#define UserDefault_locationCity    @"userLocationCity"
+#define UserDefault_CheckedCity     @"userCheckedCity"
+
+#define UserDetault_CheckedCategory @"userCheckedCategory"
+
+
+
+/*******************************************************
+ *         自定义UINavgivationBar*
+ ******************************************************/
+#define kNavBarViewHeight (IOS7_OR_LATER?64:44)
+#define kStatusBarHeight (IOS7_OR_LATER?20:0)
+
+

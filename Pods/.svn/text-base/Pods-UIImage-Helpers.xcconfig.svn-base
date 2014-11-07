@@ -1,0 +1,1 @@
+PODS_UIIMAGE_HELPERS_OTHER_LDFLAGS = -framework Accelerate -framework QuartzCore
