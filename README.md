@@ -11,11 +11,11 @@ iOS开发进阶
 6. 移动统计工具 [Flurry]()
 7. App Store统计工具 [App Annie]()
 8. Xcode插件 
-  >1.KSImageNamed  
-  >2.XVim  
-  >3.FuzzyAutocompletePlugin  
-  >4.XToDo  
-  >5.BBUDebuggerTuckAway  
+  >1.[KSImageNamed]()  
+  >2.[XVim]()  
+  >3.[FuzzyAutocompletePlugin]()  
+  >4.[XToDo]()  
+  >5.[BBUDebuggerTuckAway]()  
   >6.[SCXcodeSwitchExpander]()  
   >7.[deriveddata-exterminator]()  
   >8.[VVDocumentor]()  
