@@ -22,6 +22,15 @@ iOS开发进阶
   >9.[ClangFormat]()  
   >10.[ColorSense]()  
   >11.[XcodeBoost]()
+
+####Xcode使用技巧  
+  1. Xcode常用的快捷键如下：  
+     `cmd + shift + o`  **快速查找类，可以快速跳到指定类的源码中**  
+     `ctrl + 6`  **列出当前文件中的所有方法**  
+     `cmd + 1`  **切换成Project Navigator**  
+     `cmd + ctrl + up`  **在.h和.m文件之间切换**   
+     `cmd + enter`  **切换成standard editor**
+
   
 ####如何提高iOS开发技能
   >1.猿题库大神唐巧大大整理的[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
