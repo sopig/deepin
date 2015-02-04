@@ -57,14 +57,12 @@ iOS开发进阶
   dispatch_after(popTime,dispatch_get_main_queue(),^(void){  
   //code to be executed on the main queue after delay  
 })  
-
   5.dispatch_queue_t也可以自己定义，如果要定义queue，可以使用dispatch_queue_create方法，示例如下：  
   dispatch_queue_t urls_queue = dispatch_queue_create("blog.ddapps.tolly",NULL);  
   dispatch_async(urls_queue,^{  
 	// your code  
 });  
   dispatch_release(urls_queue);  
-
   6.GCD还有一些高级用法，例如让后台两个线程并行执行，然后等两个线程都结束后，再汇  总执行结果。这个可以用dispatch_group 、dispatch_group_async和dispatch_group_notify来实现，示例如下：  
 
 	dispatch_group_t group = dispatch_group_create();  
