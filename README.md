@@ -58,8 +58,8 @@ iOS开发进阶
 
 ####管理代码片段
 
-    1. 代码片段管理在Xcode整个界面的右下角，可以通过快捷键`cmd + opt + ctrl + 2`调出来    
-    2. ![icon](http://ww4.sinaimg.cn/large/759d343bgw1eoym0jhlxzj20c508q3zh.jpg)  
+ 1. 代码片段管理在Xcode整个界面的右下角，可以通过快捷键 `cmd + opt + ctrl + 2` 调出来    
+ 2. ![icon](http://ww4.sinaimg.cn/large/759d343bgw1eoym0jhlxzj20c508q3zh.jpg)  
 
 ####如何提高iOS开发技能
   >1.猿题库大神唐巧大大整理的[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
