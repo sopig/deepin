@@ -118,4 +118,5 @@ iOS开发进阶
 })  
 
 
-####TODO
+####Ipa重新签名
+* [Ipa重新签名](http://blog.csdn.net/cdztop/article/details/17334487)
