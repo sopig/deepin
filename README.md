@@ -11,7 +11,8 @@ Awesome tutorials in iOS [移动开发持续进阶]
   >7.[bartosz Ciechanowski](http://ciechanowski.me)  
   >8.[Big Nerd Ranch Blog](http://blog.bignerdranch.com)  
   >9.[Nils Hayat](http://nilsou.com/)    
-  >10.[swift](https://github.com/ddapps/Swift)    
+  >10.[swift](https://github.com/ddapps/Swift)  
+  >11.[开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
 
 ####工具
 1.*  项目依赖管理工具 CocoaPods   **这里是[安装和使用说明](http://code4app.com/article/cocoapods-install-usage)**  
