@@ -1,9 +1,21 @@
 iOS开发进阶
 ==========
 
+####Awesome tutorials   
+  >1.[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)
+  >2.[objc.io](http://www.objc.io/)
+  >3.[RayWenderlich](http://www.raywenderlich.com)
+  >4.[iOS Developer Tips](http://iosdevelopertips.com)
+  >5.[iOS Dev Weekly](http://iosdevweekly.com)
+  >6.[NSHipster](http://nshipster.com)
+  >7.[bartosz Ciechanowski](http://ciechanowski.me)
+  >8.[Big Nerd Ranch Blog](http://blog.bignerdranch.com)
+  >9.[Nils Hayat](http://nilsou.com/)  
+  >10.[swift](https://github.com/ddapps/Swift)  
 
 ####工具
-1. 项目依赖管理工具 CocoaPods   **这里是[安装和使用说明](http://code4app.com/article/cocoapods-install-usage)**
+1.*  项目依赖管理工具 CocoaPods   **这里是[安装和使用说明](http://code4app.com/article/cocoapods-install-usage)**  
+ * [Carthage](http://www.isaced.com/post-265.html)  
 2. 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
 3. 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
 4. 界面调试工具 [Reveal](http://revealapp.com/)  支持模拟器和真机调试。具体使用教程可以自行Google
@@ -65,16 +77,6 @@ iOS开发进阶
   
  3. 这里是常用的代码片段管理[代码片段](https://github.com/ddapps/xcode_tool)  
 
-####如何提高iOS开发技能
-  >1.猿题库大神唐巧大大整理的[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
-  >2.[objc.io](http://www.objc.io/)  
-  >3.[RayWenderlich](http://www.raywenderlich.com)  
-  >4.[iOS Developer Tips](http://iosdevelopertips.com)  
-  >5.[iOS Dev Weekly](http://iosdevweekly.com)  
-  >6.[NSHipster](http://nshipster.com)  
-  >7.[bartosz Ciechanowski](http://ciechanowski.me)  
-  >8.[Big Nerd Ranch Blog](http://blog.bignerdranch.com)   
-  >9.[Nils Hayat](http://nilsou.com/)  
 
   
 ####GCD的深入使用
