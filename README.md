@@ -121,4 +121,13 @@ iOS开发进阶
 
 
 ####Ipa重新签名
-* [Ipa重新签名](http://blog.csdn.net/cdztop/article/details/17334487)
+* [Ipa重新签名](http://blog.csdn.net/cdztop/article/details/17334487)  
+
+####数据处理  
+* [Getting Started with JSONModel](http://code.tutsplus.com/tutorials/getting-started-with-jsonmodel--cms-19840)  
+* [Magical Data Modelling Framework for JSON](https://github.com/icanzilb/JSONModel/blob/master/README.md#magical-data-modelling-framework-for-json)  
+* [JSONModel](https://github.com/icanzilb/JSONModel)  
+
+####HighLevel复杂网络处理封装
+* [YTKNetwork](https://github.com/yuantiku/YTKNetwork)  
+
