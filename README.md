@@ -15,15 +15,15 @@ Awesome tutorials in iOS [移动开发持续进阶]
   >11.[开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
 
 ####工具
-1.*  项目依赖管理工具 CocoaPods   **这里是[安装和使用说明](http://code4app.com/article/cocoapods-install-usage)**  
- * [Carthage](http://www.isaced.com/post-265.html)  
-2. 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
-3. 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
-4. 界面调试工具 [Reveal](http://revealapp.com/)  支持模拟器和真机调试。具体使用教程可以自行Google
-5. 崩溃日志记录工具 [Crashlytics]()
-6. 移动统计工具 [Flurry]()
-7. App Store统计工具 [App Annie]()
-8. Xcode插件   
+*[项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)**  
+* [项目依赖管理工具Carthage](http://www.isaced.com/post-265.html)  
+* 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
+* 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
+* 界面调试工具 [Reveal](http://revealapp.com/)  支持模拟器和真机调试。具体使用教程可以自行Google
+* 崩溃日志记录工具 [Crashlytics]()
+* 移动统计工具 [Flurry]()
+* App Store统计工具 [App Annie]()
+*  Xcode插件   
   >1.[KSImageNamed]()  
   >2.[XVim]()  
   >3.[FuzzyAutocompletePlugin]()  
