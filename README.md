@@ -15,7 +15,7 @@ Awesome tutorials in iOS [移动开发持续进阶]
   >11.[开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
 
 ####工具
-*[项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)**  
+* [项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)   
 * [项目依赖管理工具Carthage](http://www.isaced.com/post-265.html)  
 * 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
 * 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
