@@ -132,3 +132,10 @@ Awesome tutorials in iOS [移动开发持续进阶]
 ####HighLevel复杂网络处理封装
 * [YTKNetwork](https://github.com/yuantiku/YTKNetwork)  
 
+
+####CoreText排版
+1. [DTCoreText源码解析1](http://blog.cnbang.net/tech/2630/)  
+    `DTCoreText步骤原理： 1.解析HTML生成DOM树  2.解析CSS，合并得到每个DOM节点对应的样式  3. 生成NSAttributeString`  
+
+
+
