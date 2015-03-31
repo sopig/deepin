@@ -130,7 +130,7 @@ Awesome tutorials in iOS [移动开发持续进阶]
 * [JSONModel](https://github.com/icanzilb/JSONModel)  
 
 ####HighLevel复杂网络处理封装
-* [YTKNetwork](https://github.com/yuantiku/YTKNetwork)  
+* [AlamoNetwork](https://github.com/ddapps/AlamoNetwork)  
 
 
 ####CoreText排版
@@ -138,4 +138,5 @@ Awesome tutorials in iOS [移动开发持续进阶]
     `DTCoreText步骤原理： 1.解析HTML生成DOM树  2.解析CSS，合并得到每个DOM节点对应的样式  3. 生成NSAttributeString`  
 
 
-
+####相机照片处理相关
+1. [AVFoundation 和 GPUImage](http://wang9262.github.io/blog/2014/08/26/avfoundation-related/)
