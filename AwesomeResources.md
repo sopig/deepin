@@ -7,4 +7,5 @@
 
 
 ####高级控件封装
-* [JMHoledView](https://github.com/leverdeterre/JMHoledView)
+* [JMHoledView 高亮显示重点模块](https://github.com/leverdeterre/JMHoledView)
+* [iAppInfos 获取app所有重要信息](https://github.com/leverdeterre/iAppInfos)
