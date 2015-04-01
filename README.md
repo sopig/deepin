@@ -38,7 +38,7 @@ Awesome tutorials in iOS [移动开发持续进阶]
 
 ####Notice
 * 不要在init 和 dealloc里面使用点语法
-
+* [提升UITableView性能-复杂页面的优化](http://tutuge.me/2015/02/19/%E6%8F%90%E5%8D%87UITableView%E6%80%A7%E8%83%BD-%E5%A4%8D%E6%9D%82%E9%A1%B5%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/)
 ####命令行工具
 * [nomad](http://nomad-cli.com/) nomad是一个方便你操作苹果开发者中心的命令行工具
 
