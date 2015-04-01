@@ -36,6 +36,9 @@ Awesome tutorials in iOS [移动开发持续进阶]
   >10.[ColorSense]()  
   >11.[XcodeBoost]()
 
+####Notice
+* 不要在init 和 dealloc里面使用点语法
+
 ####命令行工具
 * [nomad](http://nomad-cli.com/) nomad是一个方便你操作苹果开发者中心的命令行工具
 
