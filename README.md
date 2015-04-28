@@ -1,4 +1,4 @@
-Awesome tutorials in iOS [移动开发持续进阶] 
+Awesome tutorials in iOS 
 ==========
 
 ####Awesome tutorials   
