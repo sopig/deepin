@@ -138,6 +138,8 @@ Awesome tutorials in iOS [移动开发持续进阶]
 ####HighLevel复杂网络处理封装
 * [AlamoNetwork](https://github.com/ddapps/AlamoNetwork)  
 
+####UITableView性能优化
+* 高度缓存，防止重复计算cell高度，[UITableView-FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) 
 
 ####CoreText排版
 1. [DTCoreText源码解析1](http://blog.cnbang.net/tech/2630/)  
