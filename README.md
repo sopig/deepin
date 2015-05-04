@@ -98,27 +98,41 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 ``` 
 
   2. 主线程执行：  
-  dispatch_async(dispatch_get_main_queue(),^{
+
+```swift 
+ dispatch_async(dispatch_get_main_queue(),^{
 	//something  
 });  
+```
   3. 一次性执行：  
+
+```objective-C
   static dispatch_once_t onceToken;    
   dispatch_once(&onceToken,^{  
   //code to be executed  
 });  
+```
   4. 延迟2秒执行：  
+
+```objective-C
   double delayInseconds = 2.0f;  
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW,delayInseconds * NSEC_PER_SEC);  
   dispatch_after(popTime,dispatch_get_main_queue(),^(void){  
   //code to be executed on the main queue after delay  
 })  
+```
   5. dispatch_queue_t也可以自己定义，如果要定义queue，可以使用dispatch_queue_create方法，示例如下：  
-  dispatch_queue_t urls_queue = dispatch_queue_create("blog.ddapps.tolly",NULL);  
+
+```objective-C  
+	dispatch_queue_t urls_queue = dispatch_queue_create("blog.ddapps.tolly",NULL);  
   dispatch_async(urls_queue,^{  
 	// your code  
 });  
-  dispatch_release(urls_queue);  
+  dispatch_release(urls_queue);
+```
+  
   6. GCD还有一些高级用法，例如让后台两个线程并行执行，然后等两个线程都结束后，再汇  总执行结果。这个可以用dispatch_group 、dispatch_group_async和dispatch_group_notify来实现，示例如下：  
+```objective-C
 	dispatch_group_t group = dispatch_group_create();  
 	dispatch_group_async(group,dispatch_get_global_queue(0,0),^{  
 	//并行执行的线程一  
@@ -129,7 +143,7 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 	dispatch_group_notify(group,dispatch_get_global_queue(0,0),^{  
 	//汇总结果  
 })  
-
+```
 
 ####Ipa重新签名
 * [Ipa重新签名](http://blog.csdn.net/cdztop/article/details/17334487)  
