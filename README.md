@@ -96,7 +96,6 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 	//something
 }); 
 ``` 
-
   2. 主线程执行：  
 
 ```swift 
@@ -104,7 +103,7 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 	//something  
 });  
 ```
-  3. 一次性执行：  
+ 3. 一次性执行：  
 
 ```objective-C
   static dispatch_once_t onceToken;    
