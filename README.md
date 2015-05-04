@@ -89,10 +89,14 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 ####GCD的深入使用
   * 为了方便的使用GCD，苹果提供了一些方法方便我们将block放在主线程或后台线程执，  
 或者延后执行。主要由如下几种：  
-  1. 后台执行：  
+  1. 后台执行：
+    
+```swift
    dispatch_async(dispatch_get_global_queue(0,0),^{  
 	//something
-});  
+}); 
+``` 
+
   2. 主线程执行：  
   dispatch_async(dispatch_get_main_queue(),^{
 	//something  
