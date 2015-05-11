@@ -151,7 +151,8 @@ Awesome tutorials in iOS [More Deep in iOS Study]
 ####数据处理  
 * [Getting Started with JSONModel](http://code.tutsplus.com/tutorials/getting-started-with-jsonmodel--cms-19840)  
 * [Magical Data Modelling Framework for JSON](https://github.com/icanzilb/JSONModel/blob/master/README.md#magical-data-modelling-framework-for-json)  
-* [JSONModel](https://github.com/icanzilb/JSONModel)  
+* [JSONModel](https://github.com/icanzilb/JSONModel)
+* [NJExtension](https://github.com/CoderMJLee/MJExtension)这种映射方式须待整理，**TODO**
 
 ####HighLevel复杂网络处理封装
 * [AlamoNetwork](https://github.com/ddapps/AlamoNetwork)  
