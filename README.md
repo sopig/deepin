@@ -3,10 +3,11 @@
 
 ##TODO
 - [x] [iOS资深开发者必备基础技能总结](#iOS资深开发者必备基础技能总结)
+- [x] [参考资料](#参考资料)
  
 
 ## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
-- **<font size= 10>UI</font>**  
+- **<font size= 10>UI</font>**
   - 基础控件：UIButton、UIImageView、UILabel、UIView and so on...
   - 高级控件：UITableview、UICollectionView
   - 屏幕适配：Autoresizing、AutoLayout、SizeClass、Masonary
@@ -14,7 +15,7 @@
   - Quartz2D、核心动画、事件处理、手势、UIDynamic
   
   
-- **<font size= 10>高级技能</font>** 
+- **<font size= 10>高级技能</font>**
   - 基于CoreText的排版引擎定制
   - Xcode插件开发
   - ReactiveCocoa
@@ -25,7 +26,7 @@
   - XMPP+环信+即时通讯
   - 人脸识别  
   
-- **<font size= 10>多线程网络</font>**  
+- **<font size= 10>多线程网络</font>**
   - NSThread、NSOperation、GCD、pthread
   - socket、TCP/IP
   - 网络安全、加密算法、https
@@ -62,47 +63,47 @@
  
 
 
-####Awesome tutorials   
-  >1.[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
-  >2.[objc.io](http://www.objc.io/)  
-  >3.[RayWenderlich](http://www.raywenderlich.com)  
-  >4.[iOS Developer Tips](http://iosdevelopertips.com)  
-  >5.[iOS Dev Weekly](http://iosdevweekly.com)  
-  >6.[NSHipster](http://nshipster.com)  
-  >7.[bartosz Ciechanowski](http://ciechanowski.me)  
-  >8.[Big Nerd Ranch Blog](http://blog.bignerdranch.com)  
-  >9.[Nils Hayat](http://nilsou.com/)    
-  >10.[swift](https://github.com/ddapps/Swift)  
-  >11.[开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
+##<a id="参考资料"></a>参考资料   
+  - [国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
+  - [objc.io](http://www.objc.io/)  
+  - [RayWenderlich](http://www.raywenderlich.com)  
+  - [iOS Developer Tips](http://iosdevelopertips.com)  
+  - [iOS Dev Weekly](http://iosdevweekly.com)  
+  - [NSHipster](http://nshipster.com)  
+  - [bartosz Ciechanowski](http://ciechanowski.me)  
+  - [Big Nerd Ranch Blog](http://blog.bignerdranch.com)  
+  - [Nils Hayat](http://nilsou.com/)    
+  - [swift](https://github.com/ddapps/Swift)  
+  - [开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
 
-####工具
-* [项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)   
-* [项目依赖管理工具Carthage](http://www.isaced.com/post-265.html)  
-* 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
-* 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
-* 界面调试工具 [Reveal](http://revealapp.com/)  支持模拟器和真机调试。具体使用教程可以自行Google
-* 崩溃日志记录工具 [Crashlytics]()
-* 移动统计工具 [Flurry]()
-* App Store统计工具 [App Annie]()
-*  Xcode插件   
-  >1.[KSImageNamed]()  
-  >2.[XVim]()  
-  >3.[FuzzyAutocompletePlugin]()  
-  >4.[XToDo]()  
-  >5.[BBUDebuggerTuckAway]()  
-  >6.[SCXcodeSwitchExpander]()  
-  >7.[deriveddata-exterminator]()  
-  >8.[VVDocumentor]()  
-  >9.[ClangFormat]()  
-  >10.[ColorSense]()  
-  >11.[XcodeBoost]()
+##<a id="工具"></a>高效率工具
+- [项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)   
+- [项目依赖管理工具Carthage](http://www.isaced.com/post-265.html)  
+- 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
+- 网络抓包分析工具 [Charles](http://www.charlesproxy.com/)
+- 界面调试工具 [Reveal](http://revealapp.com/)  支持模拟器和真机调试。具体使用教程可以自行Google
+- 崩溃日志记录工具 [Crashlytics]()
+- 移动统计工具 [Flurry]()
+- App Store统计工具 [App Annie]()
+- [nomad](http://nomad-cli.com/) nomad是一个方便你操作苹果开发者中心的命令行工具
+- Xcode优秀插件   
+  - [KSImageNamed]()  
+  - [XVim]()  
+  - [FuzzyAutocompletePlugin]()  
+  - [XToDo]()  
+  - [BBUDebuggerTuckAway]()  
+  - [SCXcodeSwitchExpander]()  
+  - [deriveddata-exterminator]()  
+  - [VVDocumentor]()  
+  - [ClangFormat]()  
+  - [ColorSense]()  
+  - [XcodeBoost]()
 
-####Notice
+##Notice
 * 不要在init 和 dealloc里面使用点语法
 * [提升UITableView性能-复杂页面的优化](http://tutuge.me/2015/02/19/%E6%8F%90%E5%8D%87UITableView%E6%80%A7%E8%83%BD-%E5%A4%8D%E6%9D%82%E9%A1%B5%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/)  
 
-####命令行工具
-* [nomad](http://nomad-cli.com/) nomad是一个方便你操作苹果开发者中心的命令行工具
+
 
 ####关于白盒测试
   1. 可以具体了解AppleScript     **TODO**
@@ -149,18 +150,18 @@
 
   
 ####GCD的深入使用
-  * 为了方便的使用GCD，苹果提供了一些方法方便我们将block放在主线程或后台线程执，  
+  为了方便的使用GCD，苹果提供了一些方法方便我们将block放在主线程或后台线程执，  
 或者延后执行。主要由如下几种：  
   1. 后台执行：
     
-```swift
+```objc
    dispatch_async(dispatch_get_global_queue(0,0),^{  
 	//something
 }); 
 ``` 
   2. 主线程执行：  
 
-```swift 
+```objc 
  dispatch_async(dispatch_get_main_queue(),^{
 	//something  
 });  
