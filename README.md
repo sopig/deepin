@@ -6,7 +6,8 @@
 
 
 ## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
-- **<font size= 10>UI</font>**
+- **<font size= 10>UI</font>**  
+  - 基础控件：UIButton、UIImageView、UILabel、UIView and so on...
 
 
 
