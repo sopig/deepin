@@ -7,21 +7,27 @@
  
 
 ## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
+
+####![icon](./resources/iOS_Skill.png)
+
 - **<font size= 10>UI</font>**
   - 基础控件：UIButton、UIImageView、UILabel、UIView and so on...
-  - 高级控件：UITableview、UICollectionView
+  - 高级控件：UITableview、UICollectionView主要任务是高级控件的性能优化工作
   - 屏幕适配：Autoresizing、AutoLayout、SizeClass、Masonary
   - 多控制器管理：UINavigationController、UITabbarController、自定义控制器管理
   - Quartz2D、核心动画、事件处理、手势、UIDynamic
   
   
 - **<font size= 10>高级技能</font>**
+  - UNIX环境高级编程
+  - UNIX环境网络编程
   - 基于CoreText的排版引擎定制
   - Xcode插件开发
   - ReactiveCocoa
   - React Native
   - 蓝牙4.0（BLE）+ 运动手环开发+智能家居
-  - APP高性能架构：MVC、MVVM
+  - APP高性能架构：MVC、MVVM、MbMVC
+  - iOS编码设计模式的深度理解代理、单例、工厂、观察者等
   - APP架构经验谈
   - XMPP+环信+即时通讯
   - 人脸识别  
