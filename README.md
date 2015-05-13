@@ -3,12 +3,63 @@
 
 ##TODO
 - [x] [iOS资深开发者必备基础技能总结](#iOS资深开发者必备基础技能总结)
-
+ 
 
 ## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
 - **<font size= 10>UI</font>**  
   - 基础控件：UIButton、UIImageView、UILabel、UIView and so on...
-
+  - 高级控件：UITableview、UICollectionView
+  - 屏幕适配：Autoresizing、AutoLayout、SizeClass、Masonary
+  - 多控制器管理：UINavigationController、UITabbarController、自定义控制器管理
+  - Quartz2D、核心动画、事件处理、手势、UIDynamic
+  
+  
+- **<font size= 10>高级技能</font>** 
+  - 基于CoreText的排版引擎定制
+  - Xcode插件开发
+  - ReactiveCocoa
+  - React Native
+  - 蓝牙4.0（BLE）+ 运动手环开发+智能家居
+  - APP高性能架构：MVC、MVVM
+  - APP架构经验谈
+  - XMPP+环信+即时通讯
+  - 人脸识别  
+  
+- **<font size= 10>多线程网络</font>**  
+  - NSThread、NSOperation、GCD、pthread
+  - socket、TCP/IP
+  - 网络安全、加密算法、https
+  - NSURLConnection、NSURLSession、UIWebView、AFNetworking，SDWebImage、kingFisher，MJRefresh、MJExtension
+  
+- **<font size= 10>HTML5</font>**
+  - HTML、CSS、JavaScript
+  - 响应式布局、BootStrap、JQuery、JQuery-Mobile
+  - HTML5+Native混合开发
+- **<font size= 10>逻辑和算法</font>**
+  - 数据结构与算法
+  - C/C++,Swift，python，ruby，Objc
+  - Runtime，Runloop
+- **<font size= 10>实用技术</font>** 
+  - Plist存储、NSCoding、SQLite、CoreData
+  - 音频、视频、流媒体、滤镜处理、拍照、相册、讯飞语音
+  - 推送、加速计、单元测试、静态库、第三方登录
+  - AppExtensions、炫酷动画特效、地图定位
+  - 二维码、正则表达式、ipa打包和重签名，iTunesConnect发布
+  - 瀑布流、自定义UICollectionViewLayout
+  - git、github、Cocoapods、Carthage、svn（建议放弃使用，CornerStone）
+  - 社交分享、应用统计、设备信息获取（内存、CPU、磁盘大小等硬件信息）
+  - 第三方支付集成、App内购、通讯录等
+- **<font size= 10>AppleWatch</font>**
+  - Glance、Notification
+  - iPhone App和Watch App通信
+- **<font size= 10>APP类型</font>**
+  - 新闻媒体类app
+  - 多媒体类app
+  - 电商类app
+  - SNS类富媒体（对富媒体排版的高要求）app
+  - 工具类app
+  - 助手类app，包括越狱类
+ 
 
 
 ####Awesome tutorials   
