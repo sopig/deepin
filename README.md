@@ -1,7 +1,14 @@
 做一个完美的苹果开发者
 =========
-  
-- [ ] iOS资深开发者必备基础技能总结
+
+##TODO
+- [x] [iOS资深开发者必备基础技能总结](#iOS资深开发者必备基础技能总结)
+
+
+## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
+- **<font size= 10>UI</font>**
+
+
 
 ####Awesome tutorials   
   >1.[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
