@@ -69,7 +69,7 @@
   - 助手类app，包括越狱类
  
 
-##<a id="十个问题">十个问题
+##<a id="十个问题"></a>十个问题
 
 - 你使用过Objective-C的运行时编程（Runtime Programming）么？如果使用过，你用它做了什么？你还能记得你所使用的相关的头文件或者某些方法的名称吗？
 - 你实现过多线程的Core Data么？NSPersistentStoreCoordinator，NSManagedObjectContext和NSManagedObject中的哪些需要在线程中创建或者传递？你是用什么样的策略来实现的？
