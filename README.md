@@ -4,6 +4,7 @@
 ##TODO
 - [x] [iOS资深开发者必备基础技能总结](#iOS资深开发者必备基础技能总结)
 - [x] [参考资料](#参考资料)
+- [x] [十个值得思考的问题](#十个问题)
  
 
 ## <a id="iOS资深开发者必备基础技能总结"></a> iOS资深开发者必备基础技能
@@ -30,7 +31,7 @@
   - iOS编码设计模式的深度理解代理、单例、工厂、观察者等
   - APP架构经验谈
   - XMPP+环信+即时通讯
-  - 人脸识别  
+  - 人脸识别 (face++) 
   
 - **<font size= 10>多线程网络</font>**
   - NSThread、NSOperation、GCD、pthread
@@ -68,6 +69,18 @@
   - 助手类app，包括越狱类
  
 
+##<a id="十个问题">十个问题
+
+- 你使用过Objective-C的运行时编程（Runtime Programming）么？如果使用过，你用它做了什么？你还能记得你所使用的相关的头文件或者某些方法的名称吗？
+- 你实现过多线程的Core Data么？NSPersistentStoreCoordinator，NSManagedObjectContext和NSManagedObject中的哪些需要在线程中创建或者传递？你是用什么样的策略来实现的？
+- Core开头的系列的内容。是否使用过CoreAnimation和CoreGraphics。UI框架和CA，CG框架的联系是什么？分别用CA和CG做过些什么动画或者图像上的内容。（有需要的话还可以涉及Quartz的一些内容）
+- 是否使用过CoreText或者CoreImage等？如果使用过，请谈谈你使用CoreText或者CoreImage的体验。
+- NSNotification和KVO的区别和用法是什么？什么时候应该使用通知，什么时候应该使用KVO，它们的实现上有什么区别吗？如果用protocol和delegate（或者delegate的Array）来实现类似的功能可能吗？如果可能，会有什么潜在的问题？如果不能，为什么？（虽然protocol和delegate这种东西面试已经面烂了...）
+- 你用过NSOperationQueue么？如果用过或者了解的话，你为什么要使用NSOperationQueue，实现了什么？请描述它和GCD的区别和类似的地方（提示：可以从两者的实现机制和适用范围来描述）。
+- 既然提到GCD，那么问一下在使用GCD以及block时要注意些什么？它们两是一回事儿么？block在ARC中和传统的MRC中的行为和用法有没有什么区别，需要注意些什么？
+- 您是否做过异步的网络处理和通讯方面的工作？如果有，能具体介绍一些实现策略么？
+- 对于Objective-C，你认为它最大的优点和最大的不足是什么？对于不足之处，现在有没有可用的方法绕过这些不足来实现需求。如果可以的话，你有没有考虑或者实践过重新实现OC的一些功能，如果有，具体会如何做？
+- 你实现过一个框架或者库以供别人使用么？如果有，请谈一谈构建框架或者库时候的经验；如果没有，请设想和设计框架的public的API，并指出大概需要如何做、需要注意一些什么方面，来使别人容易地使用你的框架。
 
 ##<a id="参考资料"></a>参考资料   
   - [国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
@@ -82,7 +95,7 @@
   - [swift](https://github.com/ddapps/Swift)  
   - [开发资源整理](https://github.com/lyfeyaj/awesome-resources)  
 
-##<a id="工具"></a>高效率工具
+##<a id="工具"></a>工具
 - [项目依赖管理工具CocoaPods](http://code4app.com/article/cocoapods-install-usage)   
 - [项目依赖管理工具Carthage](http://www.isaced.com/post-265.html)  
 - 应用内测分发 [蒲公英](http://www.pgyer.com/) 和 [Fir.im](fir.im)
