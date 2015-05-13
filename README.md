@@ -1,5 +1,6 @@
-Awesome tutorials in iOS [More Deep in iOS Study] 
+做一个完美的苹果开发者
 ==========
+- [ ]iOS资深开发者必备基础技能总结
 
 ####Awesome tutorials   
   >1.[国内优秀开发者博客](https://github.com/tangqiaoboy/iOSBlogCN)  
